@@ -10,7 +10,7 @@ Bitcoin Core를 Unix에서 빌드하는 방법에 대한 설명.
 
 주의
 ---------------------
-컴파일을 위한 configure 및 compile에서 절대경로(absolute path)를 사용해야한다. 예를들면 다음과 같다.
+반드시 절대경로(absolute paths)를 사용하여 비트코인과 의존성패키지를 구성(configure) 및 컴파일한다, 예를들면, 의존성패키지의 경로를 지정할때:
 
 	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 
