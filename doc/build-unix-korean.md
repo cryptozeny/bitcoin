@@ -87,7 +87,7 @@ install necessary parts of boost:-->
 
 <!--**For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
 You can add the repository and install using the following commands:-->
-**우분투 전용** 버클리DB(db4.8) 패키지는 [여기](https://launchpad.net/~bitcoin/+archive/bitcoin). 다음과 같이 저장소를 추가하여 설치할수 있다.
+**우분투에만 해당하는 내용 :** 버클리DB(db4.8) 패키지는 [여기](https://launchpad.net/~bitcoin/+archive/bitcoin). 다음과 같이 저장소를 추가하여 설치할수 있다.
 
     sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:bitcoin/bitcoin
