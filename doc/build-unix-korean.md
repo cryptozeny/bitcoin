@@ -201,7 +201,7 @@ http://miniupnp.tuxfamily.org/files/)에서 다운로드 가능하다. UPnP 지�
 부스트(Boost)
 -----
 <!-- If you need to build Boost yourself: -->
-스스로 부트스를 구축하는 경우 :
+스스로 부스트를 구축하는 경우 :
 
 	sudo su
 	./bootstrap.sh
