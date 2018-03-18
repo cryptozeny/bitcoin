@@ -6,7 +6,7 @@
 
 Bitcoin Core를 Unix에서 빌드하는 방법에 대한 설명.
 
-(OpenBSD 에서의 방법은 [build-openbsd.md](build-openbsd.md) 참고)
+(OpenBSD 에서의 방법은 [build-openbsd.md](build-openbsd.md) 및 [build-netbsd.md](build-netbsd.md) 참조)
 
 주의
 ---------------------
