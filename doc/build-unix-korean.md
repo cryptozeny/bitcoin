@@ -1,44 +1,45 @@
-UNIX BUILD NOTES
+비트코인 UNIX 빌드 설명서
 ====================
-Some notes on how to build Bitcoin Core in Unix.
 
-(For BSD specific instructions, see [build-openbsd.md](build-openbsd.md) and/or
-[build-netbsd.md](build-netbsd.md))
+	번역: cryptozeny
+	편집자 주석은 [주: 내용] 을 참고
 
-Note
+Unix에서 Bitcoin Core를 빌드하는 방법에 대한 설명서.
+
+(BSD 에서의 방법은 [build-openbsd.md](build-openbsd.md) 및 [build-netbsd.md](build-netbsd.md) 참조)
+
+주의사항
 ---------------------
-Always use absolute paths to configure and compile bitcoin and the dependencies,
-for example, when specifying the path of the dependency:
+반드시 절대경로를 사용하여 비트코인과 의존성패키지를 구성(configure) 및 컴파일합니다 (예 : 의존성패키지의 경로를 지정할때)
 
 	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 
-Here BDB_PREFIX must be an absolute path - it is defined using $(pwd) which ensures
-the usage of the absolute path.
+여기서 BDB_PREFIX는 꼭 절대경로 - 절대경로의 사용을 보장하는 $(pwd) 를 사용하여 정의된다.
 
-To Build
+빌드하기
 ---------------------
 
 ```bash
 ./autogen.sh
 ./configure
 make
-make install # optional
+make install # 선택사항
 ```
 
-This will build bitcoin-qt as well if the dependencies are met.
+의존성패키지의 요구사항이 충족된다면 자동으로 bitcoin-qt도 빌드된다. 
 
-Dependencies
+의존성 패키지 (Dependencies)
 ---------------------
 
 These dependencies are required:
 
- Library     | Purpose          | Description
+ 라이브러리명   | 목적              | 설명
  ------------|------------------|----------------------
- libssl      | Crypto           | Random Number Generation, Elliptic Curve Cryptography
- libboost    | Utility          | Library for threading, data structures, etc
- libevent    | Networking       | OS independent asynchronous networking
+ libssl      | 암호화            | 난수발생, 타원곡선 암호화
+ libboost    | 유틸리티           | 스레딩 및 데이터구조를 위한 라이브러리
+ libevent    | 네트워킹           | OS 독립적 비동기 네트워킹
 
-Optional dependencies:
+선택적 의존성패키지 (Optional dependencies) [주: 설치하는것이 좋다]
 
  Library     | Purpose          | Description
  ------------|------------------|----------------------
